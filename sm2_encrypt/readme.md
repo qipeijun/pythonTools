@@ -1,12 +1,11 @@
-project/
 
+```
+project/
 ├── config.yaml             # ✅ 公钥配置文件（YAML）
 ├── config_loader.py        # ✅ 从 YAML 读取配置
 ├── crypto_utils.py         # ✅ 使用配置的加密工具
 ├── test.py                 # ⏯️ 测试入口
-
-
-
+```
 
 ## 在项目根目录执行：
 
@@ -16,5 +15,12 @@ project/
 
 `from gmcrypto import sm2_encrypt_data`
 
+或者
+
 `from gmcrypto.crypto_utils import sm2_encrypt_data`
 
+```aiexclude
+    plaintext = "hello 国密 with yaml"
+    cipher = sm2_encrypt_data(plaintext)
+    print("加密结果：", cipher)
+```
