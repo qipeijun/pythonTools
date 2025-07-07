@@ -43,10 +43,10 @@ SENDER_PASSWORD = ''  # 你的 QQ 邮箱授权码
 RECEIVER_EMAILS = ['281534481@qq.com']  # 多个收件人
 
 # 配置邮件发送间隔
-EMAIL_SEND_INTERVAL = 3 * 60 # 默认3分钟，你可以自由调整
+EMAIL_SEND_INTERVAL = 1 * 60 # 默认3分钟，你可以自由调整
 
-# 存储最近100次调用记录
-history = deque(maxlen=100)
+# 存储最近10次调用记录
+history = deque(maxlen=10)
 
 # 配置异常时间间隔（可以随时修改）
 EXCEPTION_INTERVAL = 3  # 默认5秒，你可以自由调整

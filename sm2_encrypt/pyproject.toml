@@ -1,0 +1,15 @@
+[project]
+name = "gmcrypto"
+version = "0.1.0"
+description = "SM2 国密加密工具"
+authors = [{ name="Your Name", email="you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "gmssl",
+    "pyyaml"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
